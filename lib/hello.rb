@@ -1,7 +1,6 @@
 require 'pry'
 
 def hello_t(array)
-  binding.pry
   if block_given?
     binding.pry
     i = 0
