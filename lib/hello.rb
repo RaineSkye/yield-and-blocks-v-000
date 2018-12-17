@@ -1,10 +1,16 @@
-def hello_t(array)
-  if block_given?
-    i = 0
+require 'pry'
 
+def hello_t(array)
+  binding.pry
+  if block_given?
+    binding.pry
+    i = 0
+binding.pry
     while i < array.length
       yield(array[i])
+      binding.pry
       i = i + 1
+      binding.pry
     end
 
     array
